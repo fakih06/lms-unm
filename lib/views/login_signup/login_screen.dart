@@ -1,4 +1,4 @@
-import 'package:login_signup/utils/exports.dart';
+import 'package:unm_lms/utils/exports.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
