@@ -1,4 +1,5 @@
-import 'package:login_signup/utils/exports.dart';
+import 'package:unm_lms/utils/exports.dart';
+import 'package:unm_lms/views/matkul_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -52,7 +53,10 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                             ),
                           ),
                         )),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const MatkulScreen()));
+                    },
                   ),
                 ),
                 const SizedBox(height: 10),
