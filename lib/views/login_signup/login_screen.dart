@@ -57,7 +57,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           border: const OutlineInputBorder(
                               borderSide: BorderSide(
                             width: 5,
-                            color: AppColors.kDarkblack,
+                            color: Colors.black,
                             style: BorderStyle.solid,
                           ))),
                       autofocus: true,
@@ -75,7 +75,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           border: const OutlineInputBorder(
                               borderSide: BorderSide(
                             width: 5,
-                            color: AppColors.kDarkblack,
+                            color: Colors.black,
                             style: BorderStyle.solid,
                           ))),
                       autofocus: true,
@@ -95,7 +95,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             child: Text(
                               'Login',
                               style: const TextStyle(
-                                color: AppColors.kwhiteColor,
+                                color: Colors.white,
                                 fontWeight: FontWeight.normal,
                                 fontSize: 14,
                               ),
@@ -114,13 +114,13 @@ class _LoginScreenState extends State<LoginScreen> {
                           text: TextSpan(children: [
                         TextSpan(
                             text: "Tidak Punya Akun?",
-                            style: TextStyle(
-                                fontSize: 13, color: AppColors.kBlackColor)),
+                            style:
+                                TextStyle(fontSize: 13, color: Colors.black)),
                         TextSpan(
                             text: " Daftar",
                             style: TextStyle(
                               fontSize: 13,
-                              color: AppColors.kBlueColor,
+                              color: Colors.blue,
                             )),
                       ])),
                       onTap: () {

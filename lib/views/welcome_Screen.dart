@@ -46,7 +46,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                           child: Text(
                             'Materi',
                             style: const TextStyle(
-                              color: AppColors.kwhiteColor,
+                              color: Colors.white,
                               fontWeight: FontWeight.normal,
                               fontSize: 14,
                             ),
@@ -71,7 +71,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                           child: Text(
                             '',
                             style: const TextStyle(
-                              color: AppColors.kwhiteColor,
+                              color: Colors.white,
                               fontWeight: FontWeight.normal,
                               fontSize: 14,
                             ),
@@ -96,7 +96,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                           child: Text(
                             'Profile',
                             style: const TextStyle(
-                              color: AppColors.kwhiteColor,
+                              color: Colors.white,
                               fontWeight: FontWeight.normal,
                               fontSize: 14,
                             ),
@@ -121,7 +121,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                           child: Text(
                             'Keluar',
                             style: const TextStyle(
-                              color: AppColors.kwhiteColor,
+                              color: Colors.white,
                               fontWeight: FontWeight.normal,
                               fontSize: 14,
                             ),
