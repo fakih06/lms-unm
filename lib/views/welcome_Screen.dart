@@ -127,7 +127,10 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                             ),
                           ),
                         )),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const LoginScreen()));
+                    },
                   ),
                 ),
               ],

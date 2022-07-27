@@ -23,8 +23,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
-                    customText(
-                        txt: "Login Page",
+                    Text('Login Page',
                         style: const TextStyle(
                           fontWeight: FontWeight.bold,
                           fontSize: 26,
@@ -32,9 +31,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     const SizedBox(
                       height: 8,
                     ),
-                    customText(
-                        txt:
-                            "Please login or sign up to continue using our app.",
+                    Text('Silahkan Login untuk menggunakan aplikasi.',
                         style: const TextStyle(
                           fontWeight: FontWeight.normal,
                           fontSize: 14,
@@ -48,12 +45,44 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
 
                     const SizedBox(height: 20),
-                    CustomTextField(Lone: "Email", Htwo: "Email"),
+                    // CustomTextField(Lone: "Email", Htwo: "Email"),
+                    TextField(
+                      decoration: InputDecoration(
+                          labelText: "Email",
+                          hintText: "Email",
+                          hintStyle: const TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 17,
+                          ),
+                          border: const OutlineInputBorder(
+                              borderSide: BorderSide(
+                            width: 5,
+                            color: AppColors.kDarkblack,
+                            style: BorderStyle.solid,
+                          ))),
+                      autofocus: true,
+                      keyboardType: TextInputType.multiline,
+                    ),
                     const SizedBox(height: 20),
-                    CustomTextField(Lone: "Password", Htwo: "Password"),
+                    TextField(
+                      decoration: InputDecoration(
+                          labelText: "Password",
+                          hintText: "Password",
+                          hintStyle: const TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 17,
+                          ),
+                          border: const OutlineInputBorder(
+                              borderSide: BorderSide(
+                            width: 5,
+                            color: AppColors.kDarkblack,
+                            style: BorderStyle.solid,
+                          ))),
+                      autofocus: true,
+                      keyboardType: TextInputType.multiline,
+                    ),
                     const SizedBox(height: 20),
 
-                    const SizedBox(height: 40),
                     InkWell(
                       child: Container(
                           width: double.infinity,
@@ -82,9 +111,18 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                     InkWell(
                       child: RichText(
-                        text: RichTextSpan(
-                            one: "Don’t have an account ? ", two: "Sign Up"),
-                      ),
+                          text: TextSpan(children: [
+                        TextSpan(
+                            text: "Tidak Punya Akun?",
+                            style: TextStyle(
+                                fontSize: 13, color: AppColors.kBlackColor)),
+                        TextSpan(
+                            text: " Daftar",
+                            style: TextStyle(
+                              fontSize: 13,
+                              color: AppColors.kBlueColor,
+                            )),
+                      ])),
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
                             builder: (context) => const SignupScreen()));
