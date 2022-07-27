@@ -1,4 +1,4 @@
-import 'package:login_signup/utils/exports.dart';
+import 'package:unm_lms/utils/exports.dart';
 
 void main() {
   runApp(const MyApp());
