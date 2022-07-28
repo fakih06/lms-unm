@@ -12,6 +12,10 @@ class _MatkulScreenState extends State<MatkulScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          title: const Text('Menu Utama'),
+          backgroundColor: Color.fromARGB(255, 5, 35, 101),
+        ),
         body: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.only(top: 44),
