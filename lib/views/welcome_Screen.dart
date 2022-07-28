@@ -1,5 +1,4 @@
 import 'package:unm_lms/utils/exports.dart';
-import 'package:unm_lms/views/matkul_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -145,28 +144,3 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     );
   }
 }
-
-//
-//   Column(
-//     children: <Widget>[
-//       const Image(image: AssetImage("image/img4.png")),
-//       customText(
-//           txt: "Thank you",
-//           style: const TextStyle(
-//             fontWeight: FontWeight.bold,
-//             fontSize: 26,
-//           )),
-//       const SizedBox(
-//         height: 8,
-//       ),
-//       customText(
-//           txt: "Now, welcome to our beautiful app!",
-//           style: const TextStyle(
-//             fontWeight: FontWeight.normal,
-//             fontSize: 14,
-//           )),
-//       SignUpContainer(st: "let's Go"),
-//     ],
-//   ),
-// );
-//

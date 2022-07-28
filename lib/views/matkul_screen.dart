@@ -24,12 +24,7 @@ class _MatkulScreenState extends State<MatkulScreen> {
                   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                 ),
                 SizedBox(height: 20),
-                // customText(
-                //     txt: "Now, welcome to our beautiful app!",
-                //     style: const TextStyle(
-                //       fontWeight: FontWeight.normal,
-                //       fontSize: 14,
-                //     )),
+
                 const SizedBox(height: 30),
                 Padding(
                   padding:
@@ -52,7 +47,10 @@ class _MatkulScreenState extends State<MatkulScreen> {
                             ),
                           ),
                         )),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const MateriScreen()));
+                    },
                   ),
                 ),
                 const SizedBox(height: 10),
@@ -77,7 +75,10 @@ class _MatkulScreenState extends State<MatkulScreen> {
                             ),
                           ),
                         )),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const Materi2Screen()));
+                    },
                   ),
                 ),
                 const SizedBox(height: 10),
