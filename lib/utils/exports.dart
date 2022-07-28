@@ -1,7 +1,7 @@
 export 'package:flutter/material.dart';
 
 //Views
-export 'package:unm_lms/materi_screen.dart';
+export 'package:unm_lms/views/materi_screen.dart';
 export 'package:unm_lms/views/home_screen.dart';
 export 'package:unm_lms/views/login_signup/login_screen.dart';
 export 'package:unm_lms/views/login_signup/signup_sreen.dart';
