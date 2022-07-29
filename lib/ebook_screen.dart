@@ -1,19 +1,19 @@
 import 'package:unm_lms/utils/exports.dart';
 import 'dart:io';
 
-class ChatMateriScreen extends StatefulWidget {
-  const ChatMateriScreen({Key? key}) : super(key: key);
+class EbookScreen extends StatefulWidget {
+  const EbookScreen({Key? key}) : super(key: key);
 
   @override
-  _ChatMateriScreenState createState() => _ChatMateriScreenState();
+  _EbookScreenState createState() => _EbookScreenState();
 }
 
-class _ChatMateriScreenState extends State<ChatMateriScreen> {
+class _EbookScreenState extends State<EbookScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Chat Room'),
+        title: const Text('Ebook'),
         backgroundColor: Color.fromARGB(255, 5, 35, 101),
       ),
       body: SingleChildScrollView(
@@ -23,7 +23,7 @@ class _ChatMateriScreenState extends State<ChatMateriScreen> {
             children: [
               // const SizedBox(height: 22),
               Text(
-                'Ruang Chat',
+                'Panduan Penggunaan Aplikasi',
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
               ),
               SizedBox(height: 20),
@@ -34,32 +34,33 @@ class _ChatMateriScreenState extends State<ChatMateriScreen> {
                 child: InkWell(
                     child: Container(
                         width: double.infinity,
-                        height: 350,
+                        height: 420,
                         decoration: BoxDecoration(
                           color: Color.fromARGB(255, 200, 196, 196),
                         ),
                         child: WebView(
                           javascriptMode: JavascriptMode.unrestricted,
-                          initialUrl: 'https://www.tawk.to/software/live-chat/',
+                          initialUrl:
+                              'https://www.webtoons.com/en/drama/this-life-to-the-next/episode-5/viewer?title_no=4217&episode_no=5',
                         ))),
               ),
               const SizedBox(height: 10),
-              TextField(
-                decoration: InputDecoration(
-                    // labelText: "Masukkan Text...",
-                    hintText: "Masukkan text...",
-                    hintStyle: const TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 17,
-                    ),
-                    border: const OutlineInputBorder(
-                        borderSide: BorderSide(
-                      width: 5,
-                      color: Colors.black,
-                      style: BorderStyle.solid,
-                    ))),
-                autofocus: true,
-              ),
+              // TextField(
+              //   decoration: InputDecoration(
+              //       // labelText: "Masukkan Text...",
+              //       hintText: "Masukkan text...",
+              //       hintStyle: const TextStyle(
+              //         fontWeight: FontWeight.bold,
+              //         fontSize: 17,
+              //       ),
+              //       border: const OutlineInputBorder(
+              //           borderSide: BorderSide(
+              //         width: 5,
+              //         color: Colors.black,
+              //         style: BorderStyle.solid,
+              //       ))),
+              //   autofocus: true,
+              // ),
               const SizedBox(height: 10),
               Padding(
                 padding:
@@ -74,7 +75,7 @@ class _ChatMateriScreenState extends State<ChatMateriScreen> {
                       ),
                       child: Center(
                         child: Text(
-                          'Kirim',
+                          'Lanjutkan',
                           style: const TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.normal,
@@ -84,7 +85,7 @@ class _ChatMateriScreenState extends State<ChatMateriScreen> {
                       )),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => const MatkulScreen()));
+                        builder: (context) => const LoginScreen()));
                   },
                 ),
               ),
