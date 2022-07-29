@@ -13,7 +13,8 @@ class _MatkulScreenState extends State<MatkulScreen> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: Text("Matakuliah"),
+          title: const Text('Menu Utama'),
+          backgroundColor: Color.fromARGB(255, 5, 35, 101),
         ),
         body: SingleChildScrollView(
           child: Padding(

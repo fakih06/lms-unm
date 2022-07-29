@@ -102,10 +102,8 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                           )),
                       onTap: () {
-                        // Navigator.of(context).push(MaterialPageRoute(
-                        //     builder: (context) => const WelcomeScreen()));
-                        Navigator.pushReplacement(
-                            context, MaterialPageRoute(builder: (context) => WelcomeScreen()));
+                        Navigator.of(context).pushReplacement(MaterialPageRoute(
+                            builder: (context) => const WelcomeScreen()));
                       },
                     ),
                     const SizedBox(

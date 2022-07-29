@@ -1,4 +1,5 @@
 import 'package:unm_lms/utils/exports.dart';
+import 'package:unm_lms/views/profile_screen.dart';
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
@@ -13,7 +14,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: Text("Menu Utama"),
+          title: const Text('Menu Utama'),
+          backgroundColor: Color.fromARGB(255, 5, 35, 101),
         ),
         body: SingleChildScrollView(
           child: Padding(
@@ -22,10 +24,10 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               children: [
                 // const Image(image: AssetImage("image/img2.png")),
                 const SizedBox(height: 48),
-                Text(
-                  'Halaman Menu Utama',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                ),
+                // Text(
+                //   'Halaman Menu Utama',
+                //   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                // ),
                 SizedBox(height: 20),
                 // customText(
                 //     txt: "Now, welcome to our beautiful app!",
@@ -108,7 +110,10 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                             ),
                           ),
                         )),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => const ProfileScreen()));
+                    },
                   ),
                 ),
                 const SizedBox(height: 10),
@@ -134,11 +139,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                           ),
                         )),
                     onTap: () {
-                      // Navigator.of(context).push(MaterialPageRoute(
-                      //     builder: (context) => const LoginScreen()));
-                      //
-                        Navigator.pop(context);
-
+                      Navigator.of(context).pushReplacement(MaterialPageRoute(
+                          builder: (context) => const LoginScreen()));
                     },
                   ),
                 ),

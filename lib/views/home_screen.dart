@@ -1,6 +1,5 @@
-import 'dart:async';
-import 'package:flutter/material.dart';
-import 'login_signup/login_screen.dart';
+import 'package:unm_lms/ebook_screen.dart';
+import 'package:unm_lms/utils/exports.dart';
 
 void main() {
   runApp(MyApp());
@@ -32,7 +31,7 @@ class _MyHomePageState extends State<MyHomePage> {
     Timer(
         Duration(seconds: 2),
         () => Navigator.pushReplacement(
-            context, MaterialPageRoute(builder: (context) => LoginScreen())));
+            context, MaterialPageRoute(builder: (context) => EbookScreen())));
   }
 
   @override
