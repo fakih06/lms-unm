@@ -12,6 +12,9 @@ class _MatkulScreenState extends State<MatkulScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          title: Text("Matakuliah"),
+        ),
         body: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.only(top: 44),

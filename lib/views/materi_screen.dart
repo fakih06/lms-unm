@@ -13,6 +13,9 @@ class _MateriScreenState extends State<MateriScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          title: Text("Materi"),
+        ),
         body: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.only(top: 44),

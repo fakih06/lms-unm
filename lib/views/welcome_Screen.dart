@@ -12,6 +12,9 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          title: Text("Menu Utama"),
+        ),
         body: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.only(top: 44),
@@ -131,8 +134,11 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                           ),
                         )),
                     onTap: () {
-                      Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => const LoginScreen()));
+                      // Navigator.of(context).push(MaterialPageRoute(
+                      //     builder: (context) => const LoginScreen()));
+                      //
+                        Navigator.pop(context);
+
                     },
                   ),
                 ),
