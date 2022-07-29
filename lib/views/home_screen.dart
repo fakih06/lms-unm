@@ -1,4 +1,4 @@
-import 'package:unm_lms/ebook_screen.dart';
+import 'package:unm_lms/views/ebook_screen.dart';
 import 'package:unm_lms/utils/exports.dart';
 
 void main() {
