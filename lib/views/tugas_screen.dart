@@ -1,21 +1,19 @@
 import 'package:unm_lms/utils/exports.dart';
-import 'package:unm_lms/views/profile_screen.dart';
-import 'package:unm_lms/views/tugas_screen.dart';
 
-class WelcomeScreen extends StatefulWidget {
-  const WelcomeScreen({Key? key}) : super(key: key);
+class TugasScreen extends StatefulWidget {
+  const TugasScreen({Key? key}) : super(key: key);
 
   @override
-  _WelcomeScreenState createState() => _WelcomeScreenState();
+  _TugasScreenState createState() => _TugasScreenState();
 }
 
-class _WelcomeScreenState extends State<WelcomeScreen> {
+class _TugasScreenState extends State<TugasScreen> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Menu Utama'),
+          title: const Text('Tugas'),
           backgroundColor: Color.fromARGB(255, 5, 35, 101),
         ),
         body: SingleChildScrollView(
@@ -25,17 +23,12 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
               children: [
                 // const Image(image: AssetImage("image/img2.png")),
                 const SizedBox(height: 48),
-                // Text(
-                //   'Halaman Menu Utama',
-                //   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                // ),
+                Text(
+                  'TUGAS 1',
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                ),
                 SizedBox(height: 20),
-                // customText(
-                //     txt: "Now, welcome to our beautiful app!",
-                //     style: const TextStyle(
-                //       fontWeight: FontWeight.normal,
-                //       fontSize: 14,
-                //     )),
+
                 const SizedBox(height: 30),
                 Padding(
                   padding:
@@ -50,7 +43,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         ),
                         child: Center(
                           child: Text(
-                            'Materi',
+                            'Tugas I',
                             style: const TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.normal,
@@ -60,7 +53,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         )),
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => const MatkulScreen()));
+                          builder: (context) => const MateriScreen()));
                     },
                   ),
                 ),
@@ -78,7 +71,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         ),
                         child: Center(
                           child: Text(
-                            'Tugas',
+                            'Tugas II',
                             style: const TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.normal,
@@ -87,8 +80,8 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                           ),
                         )),
                     onTap: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => const TugasScreen()));
+                      Navigator.of(context).push(MaterialPageRoute(
+                          builder: (context) => const Materi2Screen()));
                     },
                   ),
                 ),
@@ -106,7 +99,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         ),
                         child: Center(
                           child: Text(
-                            'Profile',
+                            'Tugas III',
                             style: const TextStyle(
                               color: Colors.white,
                               fontWeight: FontWeight.normal,
@@ -114,38 +107,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                             ),
                           ),
                         )),
-                    onTap: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => const ProfileScreen()));
-                    },
-                  ),
-                ),
-                const SizedBox(height: 10),
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 0, horizontal: 15),
-                  child: InkWell(
-                    child: Container(
-                        width: double.infinity,
-                        height: 60,
-                        decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 5, 35, 101),
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: Center(
-                          child: Text(
-                            'Keluar',
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.normal,
-                              fontSize: 14,
-                            ),
-                          ),
-                        )),
-                    onTap: () {
-                      Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => const LoginScreen()));
-                    },
+                    onTap: () {},
                   ),
                 ),
               ],
