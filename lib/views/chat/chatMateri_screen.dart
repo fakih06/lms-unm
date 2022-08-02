@@ -40,7 +40,8 @@ class _ChatMateriScreenState extends State<ChatMateriScreen> {
                         ),
                         child: WebView(
                           javascriptMode: JavascriptMode.unrestricted,
-                          initialUrl: 'https://www.tawk.to/software/live-chat/',
+                          initialUrl:
+                              'https://tawk.to/chat/62e3446a54f06e12d88bdbd2/1g93s6h1l',
                         ))),
               ),
               const SizedBox(height: 10),

@@ -1,4 +1,5 @@
 import 'package:unm_lms/utils/exports.dart';
+import 'package:unm_lms/views/tugas/detailTugas_screen.dart';
 
 class TugasScreen extends StatefulWidget {
   const TugasScreen({Key? key}) : super(key: key);
@@ -53,7 +54,7 @@ class _TugasScreenState extends State<TugasScreen> {
                         )),
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => const MateriScreen()));
+                          builder: (context) => const DetailTugasScreen()));
                     },
                   ),
                 ),
@@ -79,10 +80,10 @@ class _TugasScreenState extends State<TugasScreen> {
                             ),
                           ),
                         )),
-                    onTap: () {
-                      Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => const Materi2Screen()));
-                    },
+                    // onTap: () {
+                    //   Navigator.of(context).push(MaterialPageRoute(
+                    //       builder: (context) => const Materi2Screen()));
+                    // },
                   ),
                 ),
                 const SizedBox(height: 10),
