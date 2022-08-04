@@ -1,5 +1,6 @@
 export 'package:flutter/material.dart';
 export 'dart:async';
+export 'package:hexcolor/hexcolor.dart';
 
 //Views
 export 'package:unm_lms/views/materi_screen.dart';

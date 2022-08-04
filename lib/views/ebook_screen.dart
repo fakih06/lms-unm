@@ -13,8 +13,13 @@ class _EbookScreenState extends State<EbookScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Ebook'),
-        backgroundColor: Color.fromARGB(255, 5, 35, 101),
+        leading: BackButton(color: Colors.black),
+        title: Text(
+          'Panduan Aplikasi',
+          style: TextStyle(color: Colors.black),
+        ),
+        backgroundColor: HexColor("#F5F5F8"),
+        elevation: 0,
       ),
       body: SingleChildScrollView(
         child: Padding(
@@ -22,19 +27,19 @@ class _EbookScreenState extends State<EbookScreen> {
           child: Column(
             children: [
               // const SizedBox(height: 22),
-              Text(
-                'Panduan Penggunaan Aplikasi',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-              ),
-              SizedBox(height: 20),
-              const SizedBox(height: 10),
+              // Text(
+              //   'Panduan Penggunaan Aplikasi',
+              //   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+              // ),
+              // SizedBox(height: 20),
+              // const SizedBox(height: 10),
               Padding(
                 padding:
                     const EdgeInsets.symmetric(vertical: 0, horizontal: 15),
                 child: InkWell(
                     child: Container(
                         width: double.infinity,
-                        height: 420,
+                        height: 480,
                         decoration: BoxDecoration(
                           color: Color.fromARGB(255, 200, 196, 196),
                         ),
@@ -70,8 +75,8 @@ class _EbookScreenState extends State<EbookScreen> {
                       width: double.infinity,
                       height: 60,
                       decoration: BoxDecoration(
-                        color: Color.fromARGB(255, 5, 35, 101),
-                        borderRadius: BorderRadius.circular(12),
+                        color: HexColor("#1A8B08"),
+                        borderRadius: BorderRadius.circular(30),
                       ),
                       child: Center(
                         child: Text(

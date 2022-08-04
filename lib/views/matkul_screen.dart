@@ -10,108 +10,110 @@ class MatkulScreen extends StatefulWidget {
 class _MatkulScreenState extends State<MatkulScreen> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        appBar: AppBar(
-          title: const Text('Menu Utama'),
-          backgroundColor: Color.fromARGB(255, 5, 35, 101),
+    return Scaffold(
+      appBar: AppBar(
+        leading: BackButton(color: Colors.black),
+        title: Text(
+          'Materi',
+          style: TextStyle(color: Colors.black),
         ),
-        body: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.only(top: 44),
-            child: Column(
-              children: [
-                // const Image(image: AssetImage("image/img2.png")),
-                const SizedBox(height: 48),
-                Text(
-                  'MATAKULIAH 1',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                ),
-                SizedBox(height: 20),
-
-                const SizedBox(height: 30),
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 0, horizontal: 15),
-                  child: InkWell(
-                    child: Container(
-                        width: double.infinity,
-                        height: 60,
-                        decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 5, 35, 101),
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: Center(
-                          child: Text(
-                            'Materi 1 (Video/Pdf/txt)',
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.normal,
-                              fontSize: 14,
-                            ),
-                          ),
-                        )),
-                    onTap: () {
-                      Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => const MateriScreen()));
-                    },
-                  ),
-                ),
-                const SizedBox(height: 10),
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 0, horizontal: 15),
-                  child: InkWell(
-                    child: Container(
-                        width: double.infinity,
-                        height: 60,
-                        decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 5, 35, 101),
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: Center(
-                          child: Text(
-                            'Materi 2 (Video/Pdf/txt)',
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.normal,
-                              fontSize: 14,
-                            ),
-                          ),
-                        )),
-                    onTap: () {
-                      Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => const Materi2Screen()));
-                    },
-                  ),
-                ),
-                const SizedBox(height: 10),
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 0, horizontal: 15),
-                  child: InkWell(
-                    child: Container(
-                        width: double.infinity,
-                        height: 60,
-                        decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 5, 35, 101),
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: Center(
-                          child: Text(
-                            'Materi 3 (Video/Pdf/txt)',
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.normal,
-                              fontSize: 14,
-                            ),
-                          ),
-                        )),
-                    onTap: () {},
-                  ),
-                ),
-              ],
+        backgroundColor: HexColor("#F5F5F8"),
+        elevation: 0,
+      ),
+      body: Container(
+        decoration: BoxDecoration(
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black,
+              spreadRadius: 5,
+              blurRadius: 7,
+              offset: Offset(4, 3), // changes position of shadow
             ),
+          ],
+          image: DecorationImage(
+            image: AssetImage("image/materibg.png"),
+            fit: BoxFit.cover,
+          ),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.only(top: 44),
+          child: Column(
+            children: [
+              // const Image(image: AssetImage("image/img2.png")),
+              const SizedBox(height: 48),
+              // Text(
+              //   'MATAKULIAH 1',
+              //   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+              // ),
+              SizedBox(height: 20),
+
+              const SizedBox(height: 40),
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 0, horizontal: 50),
+                child: InkWell(
+                  child: Container(
+                      width: 300,
+                      height: 70,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                      child: Center(
+                          child: FlatButton(
+                              onPressed: null,
+                              padding: EdgeInsets.all(0.0),
+                              child: Image.asset('image/materi1.png')))),
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => const MateriScreen()));
+                  },
+                ),
+              ),
+              const SizedBox(height: 20),
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 0, horizontal: 50),
+                child: InkWell(
+                  child: Container(
+                      width: 300,
+                      height: 70,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                      child: Center(
+                          child: FlatButton(
+                              onPressed: null,
+                              padding: EdgeInsets.all(0.0),
+                              child: Image.asset('image/materi2.png')))),
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => const Materi2Screen()));
+                  },
+                ),
+              ),
+              const SizedBox(height: 20),
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 0, horizontal: 50),
+                child: InkWell(
+                  child: Container(
+                      width: 300,
+                      height: 70,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(30),
+                      ),
+                      child: Center(
+                          child: FlatButton(
+                              onPressed: null,
+                              padding: EdgeInsets.all(0.0),
+                              child: Image.asset('image/materi3.png')))),
+                  onTap: () {},
+                ),
+              ),
+            ],
           ),
         ),
       ),

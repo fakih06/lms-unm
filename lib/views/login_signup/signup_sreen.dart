@@ -13,6 +13,7 @@ class _SignupScreenState extends State<SignupScreen> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: HexColor("#F5F5F8"),
         body: SingleChildScrollView(
           child: Padding(
             padding: const EdgeInsets.only(top: 13),
@@ -37,48 +38,77 @@ class _SignupScreenState extends State<SignupScreen> {
                           fontSize: 14,
                         )),
                     const SizedBox(
-                      height: 60,
-                    ),
-                    const SizedBox(
                       height: 30,
                     ),
-                    const SizedBox(height: 20),
+
                     TextField(
                       decoration: InputDecoration(
-                          labelText: "Email",
-                          hintText: "Email",
-                          hintStyle: const TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 17,
-                          ),
-                          border: const OutlineInputBorder(
-                              borderSide: BorderSide(
-                            width: 5,
-                            color: Colors.black,
-                            style: BorderStyle.solid,
-                          ))),
+                        labelText: "Nama",
+                        hintText: "Nama",
+                        hintStyle: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 17,
+                        ),
+                      ),
                       autofocus: true,
                       keyboardType: TextInputType.multiline,
                     ),
                     const SizedBox(height: 20),
                     TextField(
                       decoration: InputDecoration(
-                          labelText: "Password",
-                          hintText: "Password",
-                          hintStyle: const TextStyle(
-                            fontWeight: FontWeight.bold,
-                            fontSize: 17,
-                          ),
-                          border: const OutlineInputBorder(
-                              borderSide: BorderSide(
-                            width: 5,
-                            color: Color.fromARGB(255, 5, 35, 101),
-                            style: BorderStyle.solid,
-                          ))),
+                        labelText: "Email",
+                        hintText: "Email",
+                        hintStyle: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 17,
+                        ),
+                      ),
                       autofocus: true,
                       keyboardType: TextInputType.multiline,
                     ),
                     const SizedBox(height: 20),
+                    TextField(
+                      decoration: InputDecoration(
+                        labelText: "Phone Number",
+                        hintText: "Number Phone",
+                        hintStyle: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 17,
+                        ),
+
+                        // color: Color.fromARGB(255, 5, 35, 101),
+                        // style: BorderStyle.solid,
+                      ),
+                      autofocus: true,
+                      keyboardType: TextInputType.multiline,
+                    ),
+                    const SizedBox(height: 20),
+                    TextField(
+                      decoration: InputDecoration(
+                        labelText: "Password",
+                        hintText: "Password",
+                        hintStyle: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 17,
+                        ),
+                      ),
+                      autofocus: true,
+                      keyboardType: TextInputType.multiline,
+                    ),
+                    const SizedBox(height: 20),
+                    TextField(
+                      decoration: InputDecoration(
+                        labelText: "Confirm Password",
+                        hintText: "Confirm Password",
+                        hintStyle: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 17,
+                        ),
+                      ),
+                      autofocus: true,
+                      keyboardType: TextInputType.multiline,
+                    ),
+                    // const SizedBox(height: 20),
 
                     const SizedBox(height: 40),
                     InkWell(
@@ -86,14 +116,14 @@ class _SignupScreenState extends State<SignupScreen> {
                         width: double.infinity,
                         height: 60,
                         decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 5, 35, 101),
+                          color: HexColor("#1A8B08"),
                           borderRadius: BorderRadius.circular(12),
                         ),
                         child: Center(
                           child: Text('Daftar',
                               style: const TextStyle(
                                 color: Colors.white,
-                                fontWeight: FontWeight.normal,
+                                fontWeight: FontWeight.bold,
                                 fontSize: 14,
                               )),
                         ),

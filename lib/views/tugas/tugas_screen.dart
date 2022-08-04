@@ -11,108 +11,101 @@ class TugasScreen extends StatefulWidget {
 class _TugasScreenState extends State<TugasScreen> {
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        appBar: AppBar(
-          title: const Text('Tugas'),
-          backgroundColor: Color.fromARGB(255, 5, 35, 101),
+    return Scaffold(
+      appBar: AppBar(
+        leading: BackButton(color: Colors.black),
+        title: Text(
+          'Tugas',
+          style: TextStyle(color: Colors.black),
         ),
-        body: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.only(top: 44),
-            child: Column(
-              children: [
-                // const Image(image: AssetImage("image/img2.png")),
-                const SizedBox(height: 48),
-                Text(
-                  'TUGAS 1',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-                ),
-                SizedBox(height: 20),
+        backgroundColor: HexColor("#F5F5F8"),
+        elevation: 0,
+      ),
+      body: Container(
+        constraints: BoxConstraints.expand(),
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage("image/tugasbg.png"), fit: BoxFit.cover),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.only(top: 44),
+          child: Column(
+            children: [
+              // const Image(image: AssetImage("image/img2.png")),
+              const SizedBox(height: 48),
+              // Text(
+              //   'TUGAS 1',
+              //   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+              // ),
+              SizedBox(height: 40),
 
-                const SizedBox(height: 30),
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 0, horizontal: 15),
-                  child: InkWell(
-                    child: Container(
-                        width: double.infinity,
-                        height: 60,
-                        decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 5, 35, 101),
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: Center(
-                          child: Text(
-                            'Tugas I',
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.normal,
-                              fontSize: 14,
-                            ),
-                          ),
-                        )),
-                    onTap: () {
-                      Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => const DetailTugasScreen()));
-                    },
-                  ),
+              const SizedBox(height: 30),
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 0, horizontal: 15),
+                child: InkWell(
+                  child: Container(
+                      width: 300,
+                      height: 60,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Center(
+                          child: FlatButton(
+                              onPressed: null,
+                              padding: EdgeInsets.all(0.0),
+                              child: Image.asset('image/tugas1.png')))),
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => const DetailTugasScreen()));
+                  },
                 ),
-                const SizedBox(height: 10),
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 0, horizontal: 15),
-                  child: InkWell(
-                    child: Container(
-                        width: double.infinity,
-                        height: 60,
-                        decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 5, 35, 101),
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: Center(
-                          child: Text(
-                            'Tugas II',
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.normal,
-                              fontSize: 14,
-                            ),
-                          ),
-                        )),
-                    // onTap: () {
-                    //   Navigator.of(context).push(MaterialPageRoute(
-                    //       builder: (context) => const Materi2Screen()));
-                    // },
-                  ),
+              ),
+              const SizedBox(height: 20),
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 0, horizontal: 15),
+                child: InkWell(
+                  child: Container(
+                      width: 300,
+                      height: 60,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Center(
+                          child: FlatButton(
+                              onPressed: null,
+                              padding: EdgeInsets.all(0.0),
+                              child: Image.asset('image/tugas2.png')))),
+                  // onTap: () {
+                  //   Navigator.of(context).push(MaterialPageRoute(
+                  //       builder: (context) => const Materi2Screen()));
+                  // },
                 ),
-                const SizedBox(height: 10),
-                Padding(
-                  padding:
-                      const EdgeInsets.symmetric(vertical: 0, horizontal: 15),
-                  child: InkWell(
-                    child: Container(
-                        width: double.infinity,
-                        height: 60,
-                        decoration: BoxDecoration(
-                          color: Color.fromARGB(255, 5, 35, 101),
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: Center(
-                          child: Text(
-                            'Tugas III',
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.normal,
-                              fontSize: 14,
-                            ),
-                          ),
-                        )),
-                    onTap: () {},
-                  ),
+              ),
+              const SizedBox(height: 20),
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 0, horizontal: 15),
+                child: InkWell(
+                  child: Container(
+                      width: 300,
+                      height: 60,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(20),
+                      ),
+                      child: Center(
+                          child: FlatButton(
+                              onPressed: null,
+                              padding: EdgeInsets.all(0.0),
+                              child: Image.asset('image/tugas3.png')))),
+                  onTap: () {},
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),
