@@ -1,4 +1,3 @@
-import 'package:unm_lms/views/ebook_screen.dart';
 import 'package:unm_lms/utils/exports.dart';
 
 void main() {
@@ -66,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       )),
                   onTap: () {
                     Navigator.of(context).pushReplacement(MaterialPageRoute(
-                        builder: (context) => const EbookScreen()));
+                        builder: (context) => const vebook()));
                   },
                 ),
               ),

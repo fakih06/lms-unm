@@ -1,14 +1,13 @@
 import 'package:unm_lms/utils/exports.dart';
-import 'package:unm_lms/views/tugas/kumpulTugas_screen.dart';
 
-class UploadTugasScreen extends StatefulWidget {
-  const UploadTugasScreen({Key? key}) : super(key: key);
+class vuploadTugas extends StatefulWidget {
+  const vuploadTugas({Key? key}) : super(key: key);
 
   @override
-  _UploadTugasScreenState createState() => _UploadTugasScreenState();
+  _vuploadTugasState createState() => _vuploadTugasState();
 }
 
-class _UploadTugasScreenState extends State<UploadTugasScreen> {
+class _vuploadTugasState extends State<vuploadTugas> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(

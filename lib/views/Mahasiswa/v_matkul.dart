@@ -1,13 +1,13 @@
 import 'package:unm_lms/utils/exports.dart';
 
-class MatkulScreen extends StatefulWidget {
-  const MatkulScreen({Key? key}) : super(key: key);
+class vmatkul extends StatefulWidget {
+  const vmatkul({Key? key}) : super(key: key);
 
   @override
-  _MatkulScreenState createState() => _MatkulScreenState();
+  _vmatkulState createState() => _vmatkulState();
 }
 
-class _MatkulScreenState extends State<MatkulScreen> {
+class _vmatkulState extends State<vmatkul> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -66,7 +66,7 @@ class _MatkulScreenState extends State<MatkulScreen> {
                               child: Image.asset('image/materi1.png')))),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => const MateriScreen()));
+                        builder: (context) => const vmateri()));
                   },
                 ),
               ),
@@ -89,7 +89,7 @@ class _MatkulScreenState extends State<MatkulScreen> {
                               child: Image.asset('image/materi2.png')))),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => const Materi2Screen()));
+                        builder: (context) => const vmateri()));
                   },
                 ),
               ),
