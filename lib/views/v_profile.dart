@@ -1,13 +1,13 @@
 import 'package:unm_lms/utils/exports.dart';
 
-class ProfileScreen extends StatefulWidget {
-  const ProfileScreen({Key? key}) : super(key: key);
+class vprofile extends StatefulWidget {
+  const vprofile({Key? key}) : super(key: key);
 
   @override
-  _ProfileScreenState createState() => _ProfileScreenState();
+  _vprofileState createState() => _vprofileState();
 }
 
-class _ProfileScreenState extends State<ProfileScreen> {
+class _vprofileState extends State<vprofile> {
   bool _value = false;
   @override
   Widget build(BuildContext context) {
@@ -70,8 +70,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             ),
                           )),
                       onTap: () {
-                        Navigator.of(context).pushReplacement(MaterialPageRoute(
-                            builder: (context) => const WelcomeScreen()));
+                        Navigator.of(context).pushReplacement(
+                            MaterialPageRoute(builder: (context) => vhome()));
                       },
                     ),
                     const SizedBox(

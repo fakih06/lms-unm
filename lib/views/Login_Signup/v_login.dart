@@ -1,13 +1,13 @@
 import 'package:unm_lms/utils/exports.dart';
 
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({Key? key}) : super(key: key);
+class vlogin extends StatefulWidget {
+  const vlogin({Key? key}) : super(key: key);
 
   @override
-  _LoginScreenState createState() => _LoginScreenState();
+  _vloginState createState() => _vloginState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _vloginState extends State<vlogin> {
   bool _value = false;
   @override
   Widget build(BuildContext context) {
@@ -104,7 +104,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         )),
                     onTap: () {
                       Navigator.of(context).pushReplacement(MaterialPageRoute(
-                          builder: (context) => const WelcomeScreen()));
+                          builder: (context) => const vhome()));
                     },
                   ),
                   const SizedBox(
@@ -125,7 +125,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ])),
                     onTap: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => const SignupScreen()));
+                          builder: (context) => const vsingup()));
                     },
                   ),
                   //Text("data"),

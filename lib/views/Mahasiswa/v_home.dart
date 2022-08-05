@@ -1,31 +1,26 @@
 import 'package:unm_lms/utils/exports.dart';
-import 'package:unm_lms/views/tugas/detailTugas_screen.dart';
 
-class TugasScreen extends StatefulWidget {
-  const TugasScreen({Key? key}) : super(key: key);
+class vhome extends StatefulWidget {
+  const vhome({Key? key}) : super(key: key);
 
   @override
-  _TugasScreenState createState() => _TugasScreenState();
+  _vhomeState createState() => _vhomeState();
 }
 
-class _TugasScreenState extends State<TugasScreen> {
+class _vhomeState extends State<vhome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        leading: BackButton(color: Colors.black),
-        title: Text(
-          'Tugas',
-          style: TextStyle(color: Colors.black),
-        ),
-        backgroundColor: HexColor("#F5F5F8"),
-        elevation: 0,
-      ),
+      backgroundColor: HexColor("E6E6E6"),
+      // appBar: AppBar(
+      //   title: const Text('Menu Utama'),
+      //   backgroundColor: Color.fromARGB(255, 5, 35, 101),
+      // ),
       body: Container(
         constraints: BoxConstraints.expand(),
         decoration: const BoxDecoration(
           image: DecorationImage(
-              image: AssetImage("image/tugasbg.png"), fit: BoxFit.cover),
+              image: AssetImage("image/home.jpg"), fit: BoxFit.cover),
         ),
         child: Padding(
           padding: const EdgeInsets.only(top: 44),
@@ -33,13 +28,10 @@ class _TugasScreenState extends State<TugasScreen> {
             children: [
               // const Image(image: AssetImage("image/img2.png")),
               const SizedBox(height: 48),
-              // Text(
-              //   'TUGAS 1',
-              //   style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
-              // ),
-              SizedBox(height: 40),
 
-              const SizedBox(height: 30),
+              SizedBox(height: 20),
+
+              const SizedBox(height: 100),
               Padding(
                 padding:
                     const EdgeInsets.symmetric(vertical: 0, horizontal: 15),
@@ -51,14 +43,15 @@ class _TugasScreenState extends State<TugasScreen> {
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(20),
                       ),
-                      child: Center(
+                      child: ConstrainedBox(
+                          constraints: BoxConstraints.expand(),
                           child: FlatButton(
                               onPressed: null,
                               padding: EdgeInsets.all(0.0),
-                              child: Image.asset('image/tugas1.png')))),
+                              child: Image.asset('image/materi.png')))),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => const DetailTugasScreen()));
+                        builder: (context) => const vmatkul()));
                   },
                 ),
               ),
@@ -78,13 +71,36 @@ class _TugasScreenState extends State<TugasScreen> {
                           child: FlatButton(
                               onPressed: null,
                               padding: EdgeInsets.all(0.0),
-                              child: Image.asset('image/tugas2.png')))),
-                  // onTap: () {
-                  //   Navigator.of(context).push(MaterialPageRoute(
-                  //       builder: (context) => const Materi2Screen()));
-                  // },
+                              child: Image.asset('image/tugas.png')))),
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => const vtugas()));
+                  },
                 ),
               ),
+              // const SizedBox(height: 20),
+              // Padding(
+              //   padding:
+              //       const EdgeInsets.symmetric(vertical: 0, horizontal: 15),
+              //   child: InkWell(
+              //     child: Container(
+              //         width: 300,
+              //         height: 60,
+              //         decoration: BoxDecoration(
+              //           color: Colors.white,
+              //           borderRadius: BorderRadius.circular(20),
+              //         ),
+              //         child: Center(
+              //             child: FlatButton(
+              //                 onPressed: null,
+              //                 padding: EdgeInsets.all(0.0),
+              //                 child: Image.asset('image/panduan.png')))),
+              //     onTap: () {
+              //       Navigator.of(context).pushReplacement(MaterialPageRoute(
+              //           builder: (context) => const EbookScreen()));
+              //     },
+              //   ),
+              // ),
               const SizedBox(height: 20),
               Padding(
                 padding:
@@ -101,8 +117,11 @@ class _TugasScreenState extends State<TugasScreen> {
                           child: FlatButton(
                               onPressed: null,
                               padding: EdgeInsets.all(0.0),
-                              child: Image.asset('image/tugas3.png')))),
-                  onTap: () {},
+                              child: Image.asset('image/exit.png')))),
+                  onTap: () {
+                    Navigator.of(context).pushReplacement(MaterialPageRoute(
+                        builder: (context) => const vlogin()));
+                  },
                 ),
               ),
             ],

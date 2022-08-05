@@ -1,14 +1,13 @@
 import 'package:unm_lms/utils/exports.dart';
-import 'dart:io';
 
-class EbookScreen extends StatefulWidget {
-  const EbookScreen({Key? key}) : super(key: key);
+class vebook extends StatefulWidget {
+  const vebook({Key? key}) : super(key: key);
 
   @override
-  _EbookScreenState createState() => _EbookScreenState();
+  _vebookState createState() => _vebookState();
 }
 
-class _EbookScreenState extends State<EbookScreen> {
+class _vebookState extends State<vebook> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -90,7 +89,7 @@ class _EbookScreenState extends State<EbookScreen> {
                       )),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => const LoginScreen()));
+                        builder: (context) => const vlogin()));
                   },
                 ),
               ),

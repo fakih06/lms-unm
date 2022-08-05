@@ -1,13 +1,13 @@
 import 'package:unm_lms/utils/exports.dart';
 
-class SignupScreen extends StatefulWidget {
-  const SignupScreen({Key? key}) : super(key: key);
+class vsingup extends StatefulWidget {
+  const vsingup({Key? key}) : super(key: key);
 
   @override
-  _SignupScreenState createState() => _SignupScreenState();
+  _vsingupState createState() => _vsingupState();
 }
 
-class _SignupScreenState extends State<SignupScreen> {
+class _vsingupState extends State<vsingup> {
   bool _value = false;
   @override
   Widget build(BuildContext context) {
@@ -150,7 +150,7 @@ class _SignupScreenState extends State<SignupScreen> {
                       ),
                       onTap: () {
                         Navigator.of(context).push(MaterialPageRoute(
-                            builder: (context) => const LoginScreen()));
+                            builder: (context) => const vlogin()));
                       },
                     ),
                     //Text("data"),
