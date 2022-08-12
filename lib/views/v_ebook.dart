@@ -12,7 +12,7 @@ class _vebookState extends State<vebook> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: BackButton(color: Colors.black),
+        // leading: BackButton(color: Colors.black),
         title: Text(
           'Panduan Aplikasi',
           style: TextStyle(color: Colors.black),
