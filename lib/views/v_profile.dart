@@ -1,88 +1,115 @@
 import 'package:unm_lms/utils/exports.dart';
 
-class vprofile extends StatefulWidget {
+class vprofile extends StatelessWidget {
   const vprofile({Key? key}) : super(key: key);
 
   @override
-  _vprofileState createState() => _vprofileState();
-}
-
-class _vprofileState extends State<vprofile> {
-  bool _value = false;
-  @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
         appBar: AppBar(
-          title: const Text('Profile'),
-          backgroundColor: Color.fromARGB(255, 5, 35, 101),
+          leading: BackButton(color: Colors.black),
+          title: Text(
+            'Profile',
+            style: TextStyle(color: Colors.black),
+          ),
+          backgroundColor: HexColor("#F5F5F8"),
+          elevation: 0,
         ),
-        body: SingleChildScrollView(
-          child: Padding(
-            padding: const EdgeInsets.only(top: 13),
-            child: Center(
-              child: Padding(
-                padding:
-                    const EdgeInsets.symmetric(vertical: 15, horizontal: 15),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: <Widget>[
-                    // Text('Login Page',
-                    //     style: const TextStyle(
-                    //       fontWeight: FontWeight.bold,
-                    //       fontSize: 26,
-                    //     )),
-                    // const SizedBox(
-                    //   height: 8,
-                    // ),
-                    Text('Foto',
-                        style: const TextStyle(
-                          fontWeight: FontWeight.normal,
-                          fontSize: 22,
-                        )),
-                    const SizedBox(
-                      height: 20,
+        backgroundColor: HexColor("#F5F5F8"),
+        body: Padding(
+          padding: EdgeInsets.all(10),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(140),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.5),
+                      spreadRadius: 10,
+                      blurRadius: 5,
+                      offset: Offset(0, 3),
                     ),
-                    Image.asset("image/img1.png"),
-                    const SizedBox(
-                      height: 20,
-                    ),
-
-                    const SizedBox(height: 40),
-                    // CustomTextField(Lone: "Email", Htwo: "Email"),
-
-                    InkWell(
-                      child: Container(
-                          width: double.infinity,
-                          height: 60,
-                          decoration: BoxDecoration(
-                            color: Color.fromARGB(255, 5, 35, 101),
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                          child: Center(
-                            child: Text(
-                              'Kembali',
-                              style: const TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.normal,
-                                fontSize: 14,
-                              ),
-                            ),
-                          )),
-                      onTap: () {
-                        Navigator.of(context).pushReplacement(
-                            MaterialPageRoute(builder: (context) => vhome()));
-                      },
-                    ),
-                    const SizedBox(
-                      height: 50,
-                    ),
-
-                    //Text("data"),
                   ],
                 ),
+                child: CircleAvatar(
+                  radius: 120,
+                  backgroundImage: AssetImage("image/profile.png"),
+                ),
               ),
-            ),
+              SizedBox(
+                height: 20,
+              ),
+              Text(
+                'Uncle Roger',
+                style: GoogleFonts.poppins(
+                  textStyle: Theme.of(context).textTheme.headline4,
+                  fontSize: 30,
+                  fontWeight: FontWeight.w700,
+                  fontStyle: FontStyle.normal,
+                ),
+              ),
+              SizedBox(
+                height: 18,
+              ),
+              Text(
+                'Mahasiswa',
+                style: GoogleFonts.lato(),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ElevatedButton.icon(
+                    icon: FaIcon(FontAwesomeIcons.github),
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(50),
+                        ),
+                      ),
+                      backgroundColor:
+                          MaterialStateProperty.all<Color>(HexColor("#1A8B08")),
+                      padding: MaterialStateProperty.all(
+                        EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+                      ),
+                    ),
+                    label: Text(
+                      "GitHub",
+                    ),
+                  ),
+                  SizedBox(
+                    width: 18,
+                  ),
+                  ElevatedButton.icon(
+                    icon: FaIcon(FontAwesomeIcons.linkedin),
+                    onPressed: () {},
+                    style: ButtonStyle(
+                      shape: MaterialStateProperty.all<RoundedRectangleBorder>(
+                        RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(50),
+                        ),
+                      ),
+                      backgroundColor:
+                          MaterialStateProperty.all<Color>(HexColor("#1A8B08")),
+                      padding: MaterialStateProperty.all(
+                        EdgeInsets.symmetric(vertical: 15, horizontal: 20),
+                      ),
+                    ),
+                    label: Text(
+                      "LinkedIn",
+                    ),
+                  ),
+                ],
+              ),
+            ],
           ),
         ),
       ),

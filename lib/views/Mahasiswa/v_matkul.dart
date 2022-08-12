@@ -54,11 +54,11 @@ class _vmatkulState extends State<vmatkul> {
                 child: InkWell(
                   child: Container(
                       width: 300,
-                      height: 70,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(30),
-                      ),
+                      // height: 70,
+                      // decoration: BoxDecoration(
+                      //   color: Colors.white,
+                      //   borderRadius: BorderRadius.circular(30),
+                      // ),
                       child: Center(
                           child: FlatButton(
                               onPressed: null,
@@ -77,11 +77,11 @@ class _vmatkulState extends State<vmatkul> {
                 child: InkWell(
                   child: Container(
                       width: 300,
-                      height: 70,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(30),
-                      ),
+                      // height: 70,
+                      // decoration: BoxDecoration(
+                      //   color: Colors.white,
+                      //   borderRadius: BorderRadius.circular(30),
+                      // ),
                       child: Center(
                           child: FlatButton(
                               onPressed: null,
@@ -100,11 +100,11 @@ class _vmatkulState extends State<vmatkul> {
                 child: InkWell(
                   child: Container(
                       width: 300,
-                      height: 70,
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        borderRadius: BorderRadius.circular(30),
-                      ),
+                      // height: 70,
+                      // decoration: BoxDecoration(
+                      //   color: Colors.white,
+                      //   borderRadius: BorderRadius.circular(30),
+                      // ),
                       child: Center(
                           child: FlatButton(
                               onPressed: null,
