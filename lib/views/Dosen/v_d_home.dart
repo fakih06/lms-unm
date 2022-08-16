@@ -1,13 +1,13 @@
 import 'package:unm_lms/utils/exports.dart';
 
-class vmhome extends StatefulWidget {
-  const vmhome({Key? key}) : super(key: key);
+class vdhome extends StatefulWidget {
+  const vdhome({Key? key}) : super(key: key);
 
   @override
-  _vmhomeState createState() => _vmhomeState();
+  _vdhomeState createState() => _vdhomeState();
 }
 
-class _vmhomeState extends State<vmhome> {
+class _vdhomeState extends State<vdhome> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,7 +47,7 @@ class _vmhomeState extends State<vmhome> {
                               child: Image.asset('image/materi.png')))),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => const vmmatkul()));
+                        builder: (context) => const vdmatkul()));
                   },
                 ),
               ),

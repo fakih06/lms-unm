@@ -1,13 +1,13 @@
 import 'package:unm_lms/utils/exports.dart';
 
-class vmatkul extends StatefulWidget {
-  const vmatkul({Key? key}) : super(key: key);
+class vdvideo extends StatefulWidget {
+  const vdvideo({Key? key}) : super(key: key);
 
   @override
-  _vmatkulState createState() => _vmatkulState();
+  _vdvideoState createState() => _vdvideoState();
 }
 
-class _vmatkulState extends State<vmatkul> {
+class _vdvideoState extends State<vdvideo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +18,7 @@ class _vmatkulState extends State<vmatkul> {
           style: TextStyle(color: Colors.black),
         ),
         backgroundColor: HexColor("#F5F5F8"),
-        elevation: 0,
+        elevation: 0.0,
       ),
       body: Container(
         decoration: BoxDecoration(
@@ -31,7 +31,7 @@ class _vmatkulState extends State<vmatkul> {
             ),
           ],
           image: DecorationImage(
-            image: AssetImage("image/materibg.png"),
+            image: AssetImage("image/dmatkul.png"),
             fit: BoxFit.cover,
           ),
         ),
@@ -63,10 +63,10 @@ class _vmatkulState extends State<vmatkul> {
                           child: FlatButton(
                               onPressed: null,
                               padding: EdgeInsets.all(0.0),
-                              child: Image.asset('image/materi1.png')))),
+                              child: Image.asset('image/video1.png')))),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => const vmateri()));
+                        builder: (context) => const vmmateri()));
                   },
                 ),
               ),
@@ -86,10 +86,10 @@ class _vmatkulState extends State<vmatkul> {
                           child: FlatButton(
                               onPressed: null,
                               padding: EdgeInsets.all(0.0),
-                              child: Image.asset('image/materi2.png')))),
+                              child: Image.asset('image/video2.png')))),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
-                        builder: (context) => const vmateri()));
+                        builder: (context) => const vmmateri()));
                   },
                 ),
               ),
@@ -109,7 +109,7 @@ class _vmatkulState extends State<vmatkul> {
                           child: FlatButton(
                               onPressed: null,
                               padding: EdgeInsets.all(0.0),
-                              child: Image.asset('image/materi3.png')))),
+                              child: Image.asset('image/video3.png')))),
                   onTap: () {},
                 ),
               ),

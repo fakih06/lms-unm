@@ -1,13 +1,13 @@
 import 'package:unm_lms/utils/exports.dart';
 
-class vmateri extends StatefulWidget {
-  const vmateri({Key? key}) : super(key: key);
+class vmmateri extends StatefulWidget {
+  const vmmateri({Key? key}) : super(key: key);
 
   @override
-  _vmateriState createState() => _vmateriState();
+  _vmmateriState createState() => _vmmateriState();
 }
 
-class _vmateriState extends State<vmateri> {
+class _vmmateriState extends State<vmmateri> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
