@@ -1,0 +1,4 @@
+#Thu Aug 25 20:39:20 WITA 2022
+base.0=/Users/muhammadirfan/Desktop/Flutter/lms-unm/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
