@@ -45,7 +45,7 @@ class _vebookState extends State<vebook> {
                         child: WebView(
                           javascriptMode: JavascriptMode.unrestricted,
                           initialUrl:
-                              'https://www.webtoons.com/en/drama/this-life-to-the-next/episode-5/viewer?title_no=4217&episode_no=5',
+                              'https://www.imanuelmuliafarma.com/fotoslide/MANUAL%20BOOK%20APLIKASI%20IMFOS.pdf',
                         ))),
               ),
               const SizedBox(height: 10),

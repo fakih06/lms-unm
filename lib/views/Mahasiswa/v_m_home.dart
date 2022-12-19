@@ -41,7 +41,7 @@ class _vmhomeState extends State<vmhome> {
                 child: InkWell(
                   child: Container(
                       child: Center(
-                          child: FlatButton(
+                          child: TextButton(
                               onPressed: null,
                               // padding: EdgeInsets.all(0.0),
                               child: Image.asset('image/materi.png')))),
@@ -58,7 +58,7 @@ class _vmhomeState extends State<vmhome> {
                 child: InkWell(
                   child: Container(
                       child: Center(
-                          child: FlatButton(
+                          child: TextButton(
                               onPressed: null,
                               // padding: EdgeInsets.all(0.0),
                               child: Image.asset('image/tugas.png')))),
@@ -75,7 +75,7 @@ class _vmhomeState extends State<vmhome> {
                 child: InkWell(
                   child: Container(
                       child: Center(
-                          child: FlatButton(
+                          child: TextButton(
                               onPressed: null,
                               // padding: EdgeInsets.all(0.0),
                               child: Image.asset('image/exit.png')))),

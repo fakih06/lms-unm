@@ -60,9 +60,9 @@ class _vdvideoState extends State<vdvideo> {
                       //   borderRadius: BorderRadius.circular(30),
                       // ),
                       child: Center(
-                          child: FlatButton(
+                          child: TextButton(
                               onPressed: null,
-                              padding: EdgeInsets.all(0.0),
+                              //padding: EdgeInsets.all(0.0),
                               child: Image.asset('image/video1.png')))),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
@@ -83,9 +83,9 @@ class _vdvideoState extends State<vdvideo> {
                       //   borderRadius: BorderRadius.circular(30),
                       // ),
                       child: Center(
-                          child: FlatButton(
+                          child: TextButton(
                               onPressed: null,
-                              padding: EdgeInsets.all(0.0),
+                              //padding: EdgeInsets.all(0.0),
                               child: Image.asset('image/video2.png')))),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
@@ -106,9 +106,9 @@ class _vdvideoState extends State<vdvideo> {
                       //   borderRadius: BorderRadius.circular(30),
                       // ),
                       child: Center(
-                          child: FlatButton(
+                          child: TextButton(
                               onPressed: null,
-                              padding: EdgeInsets.all(0.0),
+                              //padding: EdgeInsets.all(0.0),
                               child: Image.asset('image/video3.png')))),
                   onTap: () {},
                 ),

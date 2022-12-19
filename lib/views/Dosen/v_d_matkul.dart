@@ -60,9 +60,9 @@ class _vdmatkulState extends State<vdmatkul> {
                       //   borderRadius: BorderRadius.circular(30),
                       // ),
                       child: Center(
-                          child: FlatButton(
+                          child: TextButton(
                               onPressed: null,
-                              padding: EdgeInsets.all(0.0),
+                              //padding: EdgeInsets.all(0.0),
                               child: Image.asset('image/video.png')))),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
@@ -83,9 +83,9 @@ class _vdmatkulState extends State<vdmatkul> {
                       //   borderRadius: BorderRadius.circular(30),
                       // ),
                       child: Center(
-                          child: FlatButton(
+                          child: TextButton(
                               onPressed: null,
-                              padding: EdgeInsets.all(0.0),
+                              //  padding: EdgeInsets.all(0.0),
                               child: Image.asset('image/pdf.png')))),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
@@ -106,9 +106,9 @@ class _vdmatkulState extends State<vdmatkul> {
                       //   borderRadius: BorderRadius.circular(30),
                       // ),
                       child: Center(
-                          child: FlatButton(
+                          child: TextButton(
                               onPressed: null,
-                              padding: EdgeInsets.all(0.0),
+                              //   padding: EdgeInsets.all(0.0),
                               child: Image.asset('image/text.png')))),
                   onTap: () {},
                 ),

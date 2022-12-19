@@ -60,9 +60,9 @@ class _vmmatkulState extends State<vmmatkul> {
                       //   borderRadius: BorderRadius.circular(30),
                       // ),
                       child: Center(
-                          child: FlatButton(
+                          child: TextButton(
                               onPressed: null,
-                              padding: EdgeInsets.all(0.0),
+                              //padding: EdgeInsets.all(0.0),
                               child: Image.asset('image/materi1.png')))),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
@@ -83,9 +83,9 @@ class _vmmatkulState extends State<vmmatkul> {
                       //   borderRadius: BorderRadius.circular(30),
                       // ),
                       child: Center(
-                          child: FlatButton(
+                          child: TextButton(
                               onPressed: null,
-                              padding: EdgeInsets.all(0.0),
+                              //padding: EdgeInsets.all(0.0),
                               child: Image.asset('image/materi2.png')))),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
@@ -106,9 +106,9 @@ class _vmmatkulState extends State<vmmatkul> {
                       //   borderRadius: BorderRadius.circular(30),
                       // ),
                       child: Center(
-                          child: FlatButton(
+                          child: TextButton(
                               onPressed: null,
-                              padding: EdgeInsets.all(0.0),
+                              //padding: EdgeInsets.all(0.0),
                               child: Image.asset('image/materi3.png')))),
                   onTap: () {},
                 ),

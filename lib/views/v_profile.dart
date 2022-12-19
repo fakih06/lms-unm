@@ -9,7 +9,7 @@ class vprofile extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          leading: BackButton(color: Colors.black),
+          // leading: BackButton(color: Colors.black),
           title: Text(
             'Profile',
             style: TextStyle(color: Colors.black),

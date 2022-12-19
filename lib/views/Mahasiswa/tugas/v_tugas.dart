@@ -51,9 +51,9 @@ class _vtugasState extends State<vtugas> {
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Center(
-                          child: FlatButton(
+                          child: TextButton(
                               onPressed: null,
-                              padding: EdgeInsets.all(0.0),
+                              //padding: EdgeInsets.all(0.0),
                               child: Image.asset('image/tugas1.png')))),
                   onTap: () {
                     Navigator.of(context).push(MaterialPageRoute(
@@ -74,9 +74,9 @@ class _vtugasState extends State<vtugas> {
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Center(
-                          child: FlatButton(
+                          child: TextButton(
                               onPressed: null,
-                              padding: EdgeInsets.all(0.0),
+                              //padding: EdgeInsets.all(0.0),
                               child: Image.asset('image/tugas2.png')))),
                   // onTap: () {
                   //   Navigator.of(context).push(MaterialPageRoute(
@@ -97,9 +97,9 @@ class _vtugasState extends State<vtugas> {
                         borderRadius: BorderRadius.circular(20),
                       ),
                       child: Center(
-                          child: FlatButton(
+                          child: TextButton(
                               onPressed: null,
-                              padding: EdgeInsets.all(0.0),
+                              //padding: EdgeInsets.all(0.0),
                               child: Image.asset('image/tugas3.png')))),
                   onTap: () {},
                 ),
